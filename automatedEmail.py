@@ -4,8 +4,8 @@ import pyperclip
 import time
 import datetime
 
-def waitingTime(time):
-    time.sleep(time)
+def waitingTime(int):
+    time.sleep(int)
     waitingTime()
 
 getClient = input("Digite seu nome: ")
@@ -24,17 +24,18 @@ pyautogui.hotkey("ctrl","t")
 pyperclip.copy("www.gmail.com")
 pyautogui.hotkey("ctrl","v")
 pyautogui.hotkey("enter")
-time.sleep(10)
+time.sleep(7)
 pyautogui.click(x=72, y=201)
-timE.sleep(5)
+time.sleep(4)
 pyperclip.copy(getEmail)
 pyautogui.hotkey("ctrl","v")
 pyautogui.hotkey("tab")
-time.sleep(5)
+time.sleep(2)
 pyperclip.copy(f"Análise das ações diárias da empresa {getTicker}")
 pyautogui.hotkey("ctrl","v")
 pyautogui.hotkey("tab")
-time.sleep(5)
+time.sleep(2)
+
 pyperclip.copy(f"""
 Bom dia {getClient}!
 
@@ -49,9 +50,10 @@ O fechamento máximo foi de: R${round(maxClose, 2)}
 Para qualquer dúvida sobre nosso sistema de análises, basta enviar um email para nosso suporte!
 
 Atenciosamente,
-Matheus Siqueira!
+Matheus Siqueira
 """)
 pyautogui.hotkey("ctrl","v")
 pyautogui.hotkey("tab")
+pyautogui.hotkey("enter")
 
-
+print("Email enviado com sucesso!")
