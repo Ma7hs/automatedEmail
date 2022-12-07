@@ -4,7 +4,7 @@
 
 - Esse projeto quis desenvolver algumas tarefas de automação em Python. Realizei esse projeto com a intuição de fazer a junção do mercado financeiro e programação, duas coisas que eu mais gosto e admiro.
 - Para rodar o projeto é necssário rodar algumas libs no Python:
-- [x] !oip install pyautogui
+- [x] !Pip install pyautogui
 - [x] !pip install yfinance
 - [X] !pip install notebook
 - [x] !pip install jupyterlab
